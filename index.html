@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1976D2;
+        }
+        .badges {
+            margin: 20px 0;
+        }
+        .screenshot {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="badges">
+        <span class="badge">Python 3.10+</span>
+        <span class="badge">MIT License</span>
+    </div>
+
+    <h1>Image to PDF Converter</h1>
+
+    <p>An advanced tool for converting images to PDF with both GUI and CLI interfaces.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Convert multiple images to a single PDF</li>
+        <li>Graphical interface with drag and drop support</li>
+        <li>Command line interface for batch processing</li>
+        <li>Adjustable quality and DPI settings</li>
+        <li>Supports PNG, JPG, JPEG, BMP, WEBP, TIFF formats</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <div class="code-block">
+        pip install image2pdf-converter
+    </div>
+
+    <h2>Usage</h2>
+    <p><strong>GUI Mode:</strong></p>
+    <div class="code-block">
+        image2pdf-gui
+    </div>
+
+    <p><strong>CLI Mode:</strong></p>
+    <div class="code-block">
+        image2pdf image1.jpg image2.png -o output.pdf --quality 90 --dpi 300
+    </div>
+
+    <h2>Documentation</h2>
+    <p>For complete documentation, please see the <a href="https://github.com/legolas2k/image2pdf-converter/blob/main/README.md">README.md</a> file.</p>
+
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License.</p>
+</body>
+</html>

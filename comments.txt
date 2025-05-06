@@ -1,0 +1,14 @@
+image2pdf-converter/
+├── src/
+│   ├── core/               # Core functionality
+│   │   ├── converter.py    # Image conversion logic
+│   │   └── settings.py     # Application settings management
+│   ├── gui/                # Graphical interface
+│   │   ├── main.py         # Main application window
+│   │   └── resources/      # UI resources (icons, etc.)
+│   └── cli/                # Command line interface
+│       └── cli.py          # CLI implementation
+├── tests/                  # Unit tests
+├── setup.py                # Package configuration
+├── pyproject.toml          # Build system configuration
+└── README.md               # This file

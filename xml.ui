@@ -1,0 +1,217 @@
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Image To PDF Converter</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #FFFFFF;
+}
+QPushButton {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+QPushButton:hover {
+    background-color: #2196F3;
+}
+QListWidget {
+    background-color: #FAFAFA;
+    border: 1px solid #E0E0E0;
+}
+QLabel {
+    color: #212121;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Converter</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #E0E0E0;
+}
+QListWidget::item:hover {
+    background-color: #E3F2FD;
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="btnAddFiles">
+              <property name="text">
+               <string>Add Files</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/add_file.svg</normaloff>:/icons/add_file.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAddFolder">
+              <property name="text">
+               <string>Add Folder</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/add_folder.svg</normaloff>:/icons/add_folder.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnRemove">
+              <property name="text">
+               <string>Remove</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/remove.svg</normaloff>:/icons/remove.svg</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="lblPreview">
+            <property name="styleSheet">
+             <string notr="true">border: 1px solid #E0E0E0;
+background-color: #FAFAFA;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="btnMoveUp">
+              <property name="text">
+               <string>Move Up</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/up.svg</normaloff>:/icons/up.svg</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnMoveDown">
+              <property name="text">
+               <string>Move Down</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/icons/down.svg</normaloff>:/icons/down.svg</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnConvert">
+            <property name="text">
+             <string>Convert to PDF</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #1976D2;
+color: white;
+font-weight: bold;
+padding: 10px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnClear">
+            <property name="text">
+             <string>Clear All</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>About</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;
+&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Image to PDF Converter&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Version 2.0&lt;/p&gt;
+&lt;p&gt;© 2025&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="styleSheet">
+           <string notr="true">background-color: #FAFAFA;
+border: none;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
